@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,ul,li,span,i,h1,h2,h3,h4,img,a,dl,dd,dt{margin:0; padding: 0;}
+li{list-style: none;}
+img{border:0 none; vertical-align: top;}
+a{ text-decoration: none; color:#000;}
+a:hover{color:#1275b9;}
+body{ font-family: "微软雅黑";}
+.clearfix{*zoom:1;}
+.clearfix:after{ content: '.'; height: 0; clear:both; visibility: hidden; display: block;}
+/*头部*/
+#header{ width:100%; height:auto; border-top:6px solid #006bb4; background: #fff;}
+.nav{ width:1000px; margin: 0 auto;}
+.nav .logo{ float: left;}
+.nav ul{ width:auto; height:auto; float:right;}
+.nav li{ display: inline-block; height:86px; line-height: 46px; margin:40px 0 0;padding:0 36px 0 7px; font-size: 18px; color: #3d3d3d; position: relative;}
+.product,.service,.company{ width:173px; height: auto; border:#e9e9e9 1px solid; padding:20px 0px 20px 15px; background:#fff; position: absolute; left:-10px; top:40px;  z-index:99; cursor: pointer;}
+.product dd,.service dd,.company dd{ width: 161px; height:35px; padding-left:10px; margin-left: -5px; border:1px solid #fff; font-size: 14px; line-height: 35px; color: #000; position: relative;}
+.product a,.service a,.company a{ color:#70789c;}
+.product a,.service a,.company a:hover{ color:#555;}
+.product .product{ left:177px; top:-15px;}
+.checked{ border:1px solid #e2e2e2; background:#eee;}
+/*幻灯片*/
+#flash{ width:100%; height:508px; overflow: hidden; position: relative; background: url('../images/flash-bg.jpg') repeat-x;}
+.flash_img{ width:1000px;height:461px; position: absolute; top:0; left:50%; margin-left:-500px; }
+.flash_img li{ width:100%; height: 100%; position: absolute; top:0; left:0;}
+.flash_img img{ width:1000px; height: 461px;}
+.flash_left,.flash_right{ display: block; width:113px; height:113px; position: absolute; background:url('../images/index-spirit.png'); top:160px; overflow: hidden; text-indent: -99em;}
+.flash_left{ left:0; background-position: 0 0;}
+.flash_right{ right:0; background-position: -113px 0;}
+.flash_btn{ position:absolute; left:0; bottom:0; z-index:88; width:100%; height:28px; padding-top:17px; background:rgba(234,234,234,0.6); text-align:center; }
+.flash_btn span{ display:inline-block; width:108px; height:9px; background:#b4b4b4; line-height:200%; overflow:hidden; vertical-align:top; margin-left:-2px; cursor:pointer;}
+.flash_btn .current{background: #006cc6;}
+/*公司简介*/
+#business{ width: 100%; height:384px; background: #fff;}
+#business ul{ width:1000px; margin:111px auto 113px;}
+.first,.second,.third,.forth{ width:162px; height:162px; overflow: hidden; position: relative; float: left;}
+.first div,.second div,.third div,.forth div{ width:162px; height:160px; background: url('../images/four_logo.jpg') no-repeat; position: absolute; top:0; left:0;}
+.first div{ background-position: 0 -177px;}
+.second div{ background-position: -179px 0;}
+.third div{ background-position: -346px 0;}
+.forth div{ background-position: -515px 0;}
+.current{width:500px;}
+#business h2{ width:290px; height:24px; margin:13px 21px 5px 189px; font-size: 24px; color:#1275b9; font-weight: 500;}
+#business p{ width:290px; height:auto; line-height: 24px; font-size:12px;color:#44464f; margin:0 21px 0 189px;}
+/*关于公司*/
+#about{ width:100%; height:500px; background:#f6f6f6; border-top:1px #ebebeb solid;border-bottom:1px #ebebeb solid;}
+#about .main{ width:1000px; height:100%; margin: 0 auto; position: relative;}
+#about .title{ width:100%; height: 73px; padding-top: 51px;}
+#about .title span{display: block; height:36px;background:url(../images/index-spirit.png) no-repeat; background-position: -235px -4px; padding:6px 0 0 63px; font-size: 14px; color:#494949;}
+.m-main{ width:100%; height:auto; }
+.m-left{ width:491px; height:242px; float:left; border-radius: 2px ; margin-right: 18px; position: relative; overflow: hidden;}
+.m-left img{ width:491px; height:242px; position: absolute; left:0; top:0;}
+.m-left img:hover{ width:540px ;height:265px; margin-left:-12px; margin-top:-25px;}
+.m-left div{ width:491px; height:242px; position: absolute; left: 0; top:242px; rgba(5,107,200,0.3)
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F056BC8', endColorstr='#7F056BC8'); background:rgba(5,107,200,0.3);}
+.m-left p{ margin:24px 15px 0 22px; font-size: 12px; line-height: 24px; width:454px; height:auto; text-indent: 2em; color:#fff;}
+.m-right{ width:491px; height:242px; float:left; border-radius: 2px; overflow: hidden;}
+.m-right ul{ width:1000%; height:100%;}
+.m-right li{width:385px; height:183px; background:url("../images/m-r-bg.jpg"); padding: 59px 12px 0 94px; float:left; }
+.m-right h2{ height:24px; line-height: 24px; color:#11f6ff; font-size: 18px; font-weight: 500;}
+.m-right p{ line-height: 24px; color:#fff; font-size: 12px; margin-top: 20px;}
+.footer{ width:70px; height:31px; padding:15px 0 89px 930px;position:relative;}
+.left,.right{ display: block; width:31px; height:31px; background:url(../images/index-spirit.png); position: absolute;}
+.left{ right:39px; background-position: -3px -118px;}
+.right{ right:0; background-position: -3px -152px;}
+.left:hover{background-position: -37px -152px;}
+.right:hover{ background-position: -37px -118px;}
+/*关于我们*/
+#ourFriend{ width:100%; height:auto; background:#fff; border-bottom: 4px solid #e2e2e2;}
+#ourFriend h3{ width:922px; height:36px; font-size:14px;margin:40px auto 44px; padding: 6px 0 0 78px; color:#494949; line-height: 24px; background: url("../images/index-spirit.png") no-repeat; background-position: -235px -62px; font-weight: 500;}
+.our-main{ width:1000px; height:132px; margin: 0 auto; overflow: hidden;}
+.our-main ul{ width:300%; height:100%;}
+.our-main li{ float:left; width:193px; height:100%; margin-right:8px; border-radius: 3px;}
+.conversion{ width:70px; height: 31px; padding:4px 0 25px 930px; margin: 0 auto; position: relative;}
+/*下部*/
+#bottom{ width:100%; height:auto; background: url("../images/b-bg.jpg") repeat-x;}
+.b-main{ width:1000px; margin:0 auto; background: url("../images/bg_btn.png") no-repeat; padding-top: 66px;}
+.b-main dl{ float:left; width:305px; height:195px; padding:11px 0 0 23px; border: 1px solid #3f95d0; position: relative;}
+.b-main dt{ width:164px; height:14px; position: absolute; top:-36px; left:24px; font-size: 14px; color: #fff;}
+.b-main i,.b-main b,.b-main em{float:right;  display: block;width:85px; height:12px; background:url(../images/index-spirit-1.png); margin-top:9px;}
+.b-main i{background-position: left top;}
+.b-main b{background-position: 0 -16px;}
+.b-main em{background-position: 0 -32px;}
+.b-main dd{ height:24px; line-height: 24px; width:100%; font-size: 12px; color:#fff;}
+.b-main dd a{color: #fff;}
+.b-main dd a:hover{color: #7bcffb;}
+.b-main .special dd{ height:34px; line-height: 34px; }
+.b-main .special span{float: left; display: block; width:34px; height:34px; background:url(../images/index-spirit-1.png) no-repeat;}
+.b-main .special .s1 {background-position:-93px 0; }
+.b-main .special .s2 {background-position:-93px -34px; }
+.b-main .special .s3 {background-position:-93px -68px; }
+.b-main .special .s4 {background-position:-93px -102px; }
+.b-main .special .s5 {background-position:-93px -136px; }
+/*底部*/
+#footer{ width:100%; height:auto; background-color: #003a61; border-top: 3px solid #00223a;}
+#footer .main{ width: 1000px; height:37px; padding:16px 0 17px 3px; margin:0 auto; position:relative;}
+#footer i{ display: block; float: left; width:38px; height:38px; background:url(../images/index-spirit-1.png) no-repeat; background-position: 0 -68px; margin-right: 10px;}
+#footer span{ height:37px; line-height: 37px; color:#fff; font-size: 12px;}
+.up{ width:44px; height:44px; position: absolute; right:0; top:0; background: #0570ba; margin-top: -3px; cursor: pointer;}
+.up b{ display: block; width:0; height: 0; margin:-4px 0 0 11px; border:11px solid; border-color: #0570ba #0570ba #fff #0570ba;}
+.up em{ width:33px; height:12px; margin:6px 0 0 6px; color:#fff; font-style: normal; }
+/*侧边栏*/
+#online{ width:62px; height:198px; position:fixed; top:50%; right:0; margin-top:-98px;}
+#online a{ display: block; width:62px; height: 62px; background:url(../images/index-spirit-1.png);}
+#online .a1{ background-position: -133px 0;}
+#online .a2{ background-position: -133px -61px;}
+#online .a3{ background-position: -133px -122px;}
+#online .a4{ height:14px; background-position: -133px -184px;}
+/*内容页一*/
+#flash1{ width:100%; height:262px; background: url("../images/content1-bg.jpg") no-repeat; background-size: 100% 262px;}
+#c-main{ width:100%; height:590px;padding-top:32px; background:url("../images/c-main-bg.jpg") repeat-x; border-bottom: 4px solid #e2e2e2;}
+.c-m-main{ width:738px; height:590px; margin:0 auto; position: relative; padding: 59px 30px 0 232px; background: url('../images/c-m-m-bg.jpg') no-repeat;}
+.c-m-main h3{ font-size: 12px; line-height: 30px; color: #7f7f7f; position: absolute;right:23px; top:-32px;}
+.c-m-main span{ color: #006ba7;}
+.c-m-main h4{ font-size: 18px ;line-height: 18px; color:#4c4c4c; margin-bottom: 6px;}
+.c-m-main p{ font-size: 12px; line-height: 24px; text-indent: 2em; color:#4c4c4c;}
+.sideNav{ width:187px; height:384px; position: absolute; top:-10px;left:0; background:url('../images/sideNav-bg.jpg');}
+.sideNav dl{ width:155px; height:209px; margin-top:42px;position: relative; padding: 3px 0 0 32px;}
+.sideNav dt{ width:70px; height:14px; font-size: 14px; color: #fff; position: absolute; top:-30px;left:16px;}
+.sideNav a{ display: block; line-height: 28px; height: 28px; font-size: 12px; color:#4f4848;}
+.sideNav a:hover{ color:#017bc1;}
+/*内容页二*/
+#flash2{ width:100%; height:329px; background: url("../images/flash2.jpg") no-repeat; background-size: 100% 329px;}
+#c-main2{ width:100%; height:auto; background:#f6f6f6; margin-top:-67px;}
+.c-nav{ width:1000px; height:53px; margin: 0 auto; padding-top: 14px;}
+.c-nav li{ width:auto; height:36px; padding:0 25px; float: left; line-height: 36px;}
+.c-nav a{font-size:14px; color:#222;}
+.c-nav .current{ background:#fdfdfd; border: #d6d6d6 1px solid; border-radius: 3px;}
+.c-nav .current a{color:#0771ba;}
+.c-main{ width:1000px;margin:63px auto 99px;}
+.c-main li{ width:228px; height:32px; padding-top:143px; margin: 0 22px 43px 0; float: left; background: url(../images/content-s.jpg) no-repeat;  background-position:0 0; position: relative;}
+.c-main a{ display:block;width:228px; height:175px; position: absolute;top:0;left: 0; }
+.c-main .bg1{ background-position:-255px 0 ;}
+.c-main .bg2{ background-position:-514px 0 ;}
+.c-main .bg3{ background-position: -769px 0;}
+.c-main i{ font-size: 14px; color:#222; font-style: normal; line-height: 32px; margin-left:5px;}
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:      -o-transform, opacity;
+    transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
